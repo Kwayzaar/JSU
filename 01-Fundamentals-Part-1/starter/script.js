@@ -7,6 +7,7 @@
 // console.log(firstName)
 
 // DYNAMIC TYPING + DATA TYPES
+/* 
 true;
 let javascriptIsFun = true 
 console.log(javascriptIsFun)
@@ -29,4 +30,6 @@ year = 1991
 console.log(typeof year);
 
 console.log(typeof null)
+*/
 
+let age = 30 
