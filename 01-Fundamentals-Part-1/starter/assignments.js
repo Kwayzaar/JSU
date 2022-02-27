@@ -54,3 +54,27 @@ m tall.
 m tall.
 */
 
+
+let markWeight1 = 78
+let markHeight1 = 1.69
+let markWeight2 = 95
+let markHeight2 = 1.88
+let markBMI1 = bmiCalc(markWeight1, markHeight1)
+let markBMI2 = bmiCalc(markWeight2, markHeight2)
+
+let johnWeight1 = 92
+let johnHeight1 = 1.95
+let johnWeight2 = 85
+let johnHeight2 = 1.76
+let johnBMI1 = bmiCalc(johnWeight1, johnHeight1)
+let johnBMI2 = bmiCalc(johnWeight2, johnHeight2)
+
+let markHigherBMI1 = markBMI1 > johnBMI1
+console.log(markHigherBMI1)
+
+let markHigherBMI2 = markBMI2 > johnBMI2
+console.log(markHigherBMI2)
+
+function bmiCalc(weight, height) { //make BMI calculator a function 
+  return weight / height ** 2
+}
