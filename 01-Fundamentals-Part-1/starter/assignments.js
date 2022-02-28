@@ -66,13 +66,13 @@ if (height){
 */
 
 // Equality Operators
-let numNeighbors = Number(prompt('How many neighbouring countries does your country have?'))
-console.log(typeof numNeighbors)
+// let numNeighbors = Number(prompt('How many neighbouring countries does your country have?'))
+// console.log(typeof numNeighbors)
 
-if(numNeighbors === 1) { //will run else statement if input is "1"
-  console.log('Only 1 border!')
-} else if(numNeighbors > 1) {
-  console.log('More than 1 border')
-} else {
-  console.log('No borders')
-}
+// if(numNeighbors === 1) { //will run else statement if input is "1"
+//   console.log('Only 1 border!')
+// } else if(numNeighbors > 1) {
+//   console.log('More than 1 border')
+// } else {
+//   console.log('No borders')
+// }

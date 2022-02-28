@@ -95,3 +95,26 @@ Test data:
 § Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
 */
 
+let dolphinScoreArr = [97, 112, 101]
+let koalaScoreArr = [97, 112, 101]
+
+function avgScore(scoreArr) {
+  let sum = scoreArr.reduce(
+    (a, b) => a + b, 0
+  )
+
+  return Number((sum / scoreArr.length).toFixed(0))
+}
+
+let dolphinAvgScore = avgScore(dolphinScoreArr)
+let koalaAvgScore = avgScore(koalaScoreArr)
+
+if (dolphinAvgScore > koalaAvgScore && dolphinAvgScore >= 100) {
+  console.log(`Dolphins win with ${dolphinAvgScore} points!`)
+  } else if (dolphinAvgScore < koalaAvgScore && koalaAvgScore > 100) {
+  console.log(`Koalas win with ${koalaAvgScore} points!`)
+  } else if (dolphinAvgScore === koalaAvgScore && dolphinAvgScore && koalaAvgScore >= 100) {
+    console.log("It's a draw!")
+  } else {
+    console.log("There is no winner :(")
+  }
