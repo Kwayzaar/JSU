@@ -34,5 +34,45 @@ let description = "Portugal is in Europe, and its 11 million people speak portug
 // console.log(finlandPopulation > population)
 // console.log(population > avgPopulation)
 
+// String and Tempate Literals
 description = `${country} is in ${continent}, and it's ${population} people speak ${language}`
-console.log(description)
+// console.log(description)
+
+/*
+// Taking Decisions: if / else statements
+if (population > avgPopulation) {
+  console.log(`${country}'s population is above average`)
+} else {
+  console.log(`${country}'s population is below average`)
+}
+*/
+
+/* Type Conversion and Coercion
+console.log('9' - '5') // 4
+console.log('19' - '13' + '17') //617
+console.log('19' - '13' + 17) //23
+console.log('123' < 57) //false 
+console.log(5 + 6 + '4' + 9 - 4 - 2) //1143
+*/
+
+/* Truthy and Falsy values 
+let height = 1
+let type = Boolean(height)
+if (height){
+  console.log(`height is ${type}` )
+} else {
+  console.log(`height is ${Boolean(height)}`)
+}
+*/
+
+// Equality Operators
+let numNeighbors = Number(prompt('How many neighbouring countries does your country have?'))
+console.log(typeof numNeighbors)
+
+if(numNeighbors === 1) { //will run else statement if input is "1"
+  console.log('Only 1 border!')
+} else if(numNeighbors > 1) {
+  console.log('More than 1 border')
+} else {
+  console.log('No borders')
+}
