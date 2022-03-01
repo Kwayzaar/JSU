@@ -118,3 +118,8 @@ if (dolphinAvgScore > koalaAvgScore && dolphinAvgScore >= 100) {
   } else {
     console.log("There is no winner :(")
   }
+
+let bill = 430.89
+let tip = bill > 50 && bill < 300 ? Number((bill * .15).toFixed(0)) : Number((bill * .2).toFixed(0))
+
+console.log(`the bill was ${bill}, the tip was ${tip} and the total was ${bill + tip}`)
