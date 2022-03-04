@@ -32,3 +32,10 @@ function describePopulation(country, population) {
   return `${country} has ${population} million people, which is about ${percentageOfWorld1(population)}% of the World.`
 }
 console.log(describePopulation("America", 325))
+
+// Arrays
+const populations = [329, 1400, 56, 128]
+console.log(populations.length === 4 ? true : false)
+
+const percentages = [percentageOfWorld1(populations[0]), percentageOfWorld1(populations[1]), percentageOfWorld1(populations[2]), percentageOfWorld1(populations[3])]
+console.log(percentages)
