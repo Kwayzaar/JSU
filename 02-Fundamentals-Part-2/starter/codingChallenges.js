@@ -38,3 +38,14 @@ function checkWinner(avgDolphins, avgKoalas) {
 
 checkWinner(avgDolphins, avgKoalas)
 */
+
+function calcTip(bill) {
+  return (bill > 50 && bill < 300) 
+    ? Number((bill * .15).toFixed(2))
+    : Number((bill * .2).toFixed(2))
+}
+
+const bills = [125, 555, 44]
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])]
+
+console.log(tips)
