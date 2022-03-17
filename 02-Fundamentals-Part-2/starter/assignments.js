@@ -72,3 +72,26 @@ const myCountry = {
 // Dot vs Bracket notation
 console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language} speaking people, ${myCountry.neighbors.length} neighboring countries and a capital called ${myCountry.capital}.`, myCountry.population += 2, myCountry['population'] -= 2)
 
+// Object methods
+const jonas = {
+  firstName: 'Jonas',
+  lastName: 'Lee',
+  birthYear: 1991,
+  job: 'teacher',
+  friends: ['Michael', 'Peter', 'Steven'],
+  hasDriversLicense: true,
+
+  calcAge: function() {  //function inside an object is a method
+    this.age = 2037 - this.birthYear //'this' is prop in this object
+    return this.age;
+  },
+
+  summarizeJonas: function() {
+
+  return `${this.firstName} is a ${this.calcAge(this.birthYear)}-year-old teacher, and he ${hasDriversLicense === true ? "has" : "does not have"} a driver's license}`
+  }
+}
+console.log(jonas.age)
+console.log(jonas.summarizeJonas)
+
+// Challenge: write a method that return string that summarizes data about Jonas
