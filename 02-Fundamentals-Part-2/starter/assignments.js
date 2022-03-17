@@ -82,16 +82,17 @@ const jonas = {
   hasDriversLicense: true,
 
   calcAge: function() {  //function inside an object is a method
-    this.age = 2037 - this.birthYear //'this' is prop in this object
+    
+    this.age = 2037 - this.birthYear //'this' is a property in this object
     return this.age;
   },
 
   summarizeJonas: function() {
 
-  return `${this.firstName} is a ${this.calcAge(this.birthYear)}-year-old teacher, and he ${hasDriversLicense === true ? "has" : "does not have"} a driver's license}`
+  return `${this.firstName} is a ${this.calcAge(this.birthYear)}-year-old teacher, and he ${this.hasDriversLicense === true ? "has" : "does not have"} a driver's license`
   }
 }
-console.log(jonas.age)
-console.log(jonas.summarizeJonas)
+console.log(jonas.calcAge())
+console.log(jonas.summarizeJonas())
 
 // Challenge: write a method that return string that summarizes data about Jonas
