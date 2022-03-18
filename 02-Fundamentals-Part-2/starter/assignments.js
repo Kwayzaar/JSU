@@ -88,16 +88,17 @@ const jonas = {
   },
 
 // Challenge: write a method that return string that summarizes data about Jonas
-  summarizeJonas: function() {
 
+  summarizeJonas: function() {
   return `${this.firstName} is a ${this.calcAge(this.birthYear)}-year-old teacher, and he ${this.hasDriversLicense === true ? "has" : "does not have"} a driver's license`
   }
+
 }
 console.log(jonas.calcAge())
 console.log(jonas.summarizeJonas())
 
-for (let voter = 1; voter <= 50; voter++) {
-  console.log(`Voter number ${voter} is currently voting`)
-}
+// for (let voter = 1; voter <= 50; voter++) {
+//   console.log(`Voter number ${voter} is currently voting`)
+// }
 
 
