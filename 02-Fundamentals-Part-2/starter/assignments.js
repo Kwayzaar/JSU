@@ -101,4 +101,12 @@ console.log(jonas.summarizeJonas())
 //   console.log(`Voter number ${voter} is currently voting`)
 // }
 
+// Looping arrays, Break and Continue
+// const populations = [329, 1400, 56, 128]
+const percentages2 = []
 
+for (let i = 0; i < populations.length; i++) {
+  percentages2.push(percentageOfWorld1(populations[i]))
+}
+
+console.log(percentages, percentages2)
