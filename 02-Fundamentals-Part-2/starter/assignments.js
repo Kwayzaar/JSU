@@ -109,14 +109,14 @@ for (let i = 0; i < populations.length; i++) {
   percentages2.push(percentageOfWorld1(populations[i]))
 }
 
-console.log(percentages, percentages2)
+console.log(percentages2)
 
-const arr = [0,1,2,4,6,5,3]
+// Looping backwards, loops in loops 
+const listOfNeighbors = [['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden',
+'Russia']]
 
-function findMedian(arr) {
-  const sortArr = arr.sort()
-  const median = (arr.length / 2) - .5
-  return sortArr[median]
+for(let i = 0; i < listOfNeighbors.length; i++) {
+  for(let j = 0; j < listOfNeighbors[i].length; j++){
+    console.log(`Neighbors: ${listOfNeighbors[i][j]}`)
+  }
 }
-
-console.log(findMedian(arr))
