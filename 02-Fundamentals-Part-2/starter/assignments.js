@@ -110,3 +110,13 @@ for (let i = 0; i < populations.length; i++) {
 }
 
 console.log(percentages, percentages2)
+
+const arr = [0,1,2,4,6,5,3]
+
+function findMedian(arr) {
+  const sortArr = arr.sort()
+  const median = (arr.length / 2) - .5
+  return sortArr[median]
+}
+
+console.log(findMedian(arr))
