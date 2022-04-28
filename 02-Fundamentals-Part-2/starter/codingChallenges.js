@@ -145,4 +145,37 @@ added together
 To calculate the average, divide the sum you calculated before by the
 length of the array (because that's the number of elements)
 4.3.
-Call the function with the 'totals' array
+Call the function with the 'totals' array */
+
+const bills = [22,295,176,440,37,105,10,1100,86,52]
+const tips = []
+const totals = []
+
+function calcTip(bill) {
+  return (bill > 50 && bill < 300) 
+    ? Number((bill * .15).toFixed(2))
+    : Number((bill * .2).toFixed(2))
+}
+
+for(let i = 0; i < bills.length; i++){
+  tips.push(calcTip(bills[i]))
+}
+
+for(let j = 0; j < tips.length; j++){
+  totals.push(tips[j] + bills[j])
+}
+
+console.log(tips)
+console.log(totals)
+
+function calcAvg(arr) {
+
+  let sum = 0
+  for(let i = 0; i < arr.length; i++){
+    sum = sum + arr[i]
+  }
+
+  return Number((sum / arr.length).toFixed(2))
+}
+
+console.log(calcAvg(totals))
