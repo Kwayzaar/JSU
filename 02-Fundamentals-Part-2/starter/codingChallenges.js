@@ -157,6 +157,7 @@ function calcTip(bill) {
     : Number((bill * .2).toFixed(2))
 }
 
+/*
 for(let i = 0; i < bills.length; i++){
   tips.push(calcTip(bills[i]))
 }
@@ -164,18 +165,34 @@ for(let i = 0; i < bills.length; i++){
 for(let j = 0; j < tips.length; j++){
   totals.push(tips[j] + bills[j])
 }
+*/
 
-console.log(tips)
-console.log(totals)
+// REFACTOR
+for(let i = 0; i < bills.length; i++){
+  const tip = calcTip(bills[i])
+  tips.push(tip)
+  totals.push(tip + bills[i])
+}
 
 function calcAvg(arr) {
-
   let sum = 0
   for(let i = 0; i < arr.length; i++){
-    sum = sum + arr[i]
+    // sum = sum + arr[i]
+    sum += arr[i]
   }
-
   return Number((sum / arr.length).toFixed(2))
 }
 
+console.log(bills, tips, totals)
 console.log(calcAvg(totals))
+
+Hi, please set the following DNS records for Formsort:
+
+Type	Name	Value
+CNAME	
+_efe86700749260d5253b1b7fb081205e.fsdtesting.com
+_9609bede5160805dc6de4ba7b371d164.xdvyhgsvzs.acm-validations.aws.
+
+CNAME	
+www.fsdtesting.com	
+d3r1v0msjxs7of.cloudfront.net
