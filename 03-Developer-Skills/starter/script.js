@@ -57,7 +57,7 @@ function printForecast(arr) {
 
   const forecast = newArr.join(' ... ');
 
-  return forecast;
+  console.log(forecast);
 }
-console.log(data2);
-console.log(printForecast(data2));
+
+printForecast(data2);
