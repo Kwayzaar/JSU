@@ -22,7 +22,7 @@ let highscore = 0;
 // Reset the game
 document.querySelector('.again').addEventListener('click', function () {
   score = 20;
-  let secretNumber = Math.trunc(Math.random() * 20) + 1;
+  secretNumber = Math.trunc(Math.random() * 20) + 1;
 
   // reset bg, input, message, score, secretNumber + style
   document.querySelector('body').style.backgroundColor = '#222';
