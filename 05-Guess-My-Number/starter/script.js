@@ -17,6 +17,7 @@ console.log(document.querySelector('.guess').value);
 
 let secretNumber = Math.trunc(Math.random() * 20) + 1;
 let score = 20;
+let highscore = 0;
 
 // Reset the game
 document.querySelector('.again').addEventListener('click', function () {
@@ -50,6 +51,12 @@ document.querySelector('.check').addEventListener('click', function () {
 
     // Change input width on win
     document.querySelector('.number').style.width = '30rem';
+
+    // Checking/setting the highscore
+    if (score > highscore) {
+      highscore = score;
+      document.querySelector('.highscore').textContent = highscore;
+    }
 
     // If the guess is higher
   } else if (guess > secretNumber) {
